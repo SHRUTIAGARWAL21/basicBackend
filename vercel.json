@@ -1,6 +1,6 @@
 {
   "version": 2,
   "name": "basicBackend",
-  "builds": [{ "src": "server.js", "use": "@vercel/node" }],
-  "routes": [{ "src": "/ask/(.*)", "dest": "/server.js" }]
+  "builds": [{ "src": "index.js", "use": "@vercel/node" }],
+  "routes": [{ "src": "/ask/(.*)", "dest": "/index.js" }]
 }
