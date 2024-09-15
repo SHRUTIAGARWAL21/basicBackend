@@ -42,19 +42,19 @@ const githubData = {
   updated_at: "2016-03-01T18:11:15Z",
 };
 
-app.get("/", (req, res) => {
+app.get("/ask", (req, res) => {
   res.send("Hello World!");
 });
 
-app.get("/twitter", (req, res) => {
+app.get("/ask/twitter", (req, res) => {
   res.send("shrutiAggrawal");
 });
 
-app.get("/login", (req, res) => {
+app.get("/ask/login", (req, res) => {
   res.send("<h1>Please login with ID and password</h1>");
 });
 
-app.get("/github", (req, res) => {
+app.get("/ask/github", (req, res) => {
   res.json(githubData);
 });
 
